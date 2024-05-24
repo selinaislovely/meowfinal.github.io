@@ -1,0 +1,253 @@
+/* Global styles */
+body {
+    background-color: #e6fffa;
+    overflow-x: hidden;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+header .container {
+    transition: all 0.3s ease-in-out;
+}
+
+main {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header styling */
+header {
+    background-color: #10b981;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+header a {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #d1fae5;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+/* Main content styling */
+main {
+    padding-top: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h1 {
+    color: #10b981;
+}
+
+section h2 {
+    color: #10b981;
+}
+
+section p {
+    color: #4b5563;
+}
+
+/* Branches section */
+.branch-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.branch-card:hover {
+    transform: scale(1.05);
+    background-color: #d4f7dc;
+}
+
+.branch-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.branch-card .info {
+    padding: 1rem;
+}
+
+.branch-card h3 {
+    color: #10b981;
+}
+
+/* Services section */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.service-table th,
+.service-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.service-table th {
+    background-color: #d1fae5;
+    color: #10b981;
+    font-weight: 600;
+}
+
+.service-table tbody tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* Testimonials section */
+.testimonial-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    background-color: #d4f7dc;
+}
+
+.testimonial-card p {
+    color: #4b5563;
+}
+
+.testimonial-card .author {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.slideInRight {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* Entry animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #10b981;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: pulse 1s infinite;
+}
+
+/* Header functionality */
+.hide-header-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #10b981;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hide-header-button:hover {
+    background-color: #059669;
+}
+
+
+ /* Custom CSS for popping up effect on hover */
+ .green-card {
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.green-card:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.why-choose-us-card {
+    background-color: #f0f0f0; /* Light gray */
+    transition: transform 0.3s; box-shadow: 0.3s;
+}
+
+.why-choose-us-card:hover {
+    background-color: #e5e5e5; /* Slightly darker gray on hover */
+    transform: translateY(-5px) scale(1.05);
+}
